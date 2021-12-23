@@ -1,0 +1,2 @@
+# kk-vision-board
+# INITIAL TEMPLATE OF KK's VISION BOARD
