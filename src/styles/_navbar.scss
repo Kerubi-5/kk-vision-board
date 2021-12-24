@@ -9,6 +9,7 @@
   align-items: center;
   transition: all 0.2s ease;
   z-index: var(--z-fixed);
+  background-color: var(--container-color);
   &__brand {
     cursor: pointer;
     font-weight: var(--font-medium);
@@ -29,7 +30,7 @@
       height: calc(100% - var(--header-height));
       flex-direction: column;
       background-color: #fff;
-      gap: 10rem;
+      gap: 9rem;
       &.active {
         top: var(--header-height);
       }
