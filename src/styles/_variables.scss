@@ -4,12 +4,13 @@
   --header-height: 3.5rem;
 
   // COLORS
+  --color: 299;
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(355, 70%, 54%);
-  --first-color-alt: hsl(355, 66%, 50%);
-  --title-color: hsl(355, 4%, 15%);
-  --text-color: hsl(355, 4%, 35%);
-  --text-color-light: hsl(355, 4%, 55%);
+  --first-color: hsl(var(--color), 70%, 54%);
+  --first-color-alt: hsl(var(--color), 66%, 50%);
+  --title-color: hsl(var(--color), 4%, 15%);
+  --text-color: hsl(var(--color), 4%, 35%);
+  --text-color-light: hsl(var(--color), 4%, 55%);
   --body-color: #fff;
   --container-color: #fff;
 
