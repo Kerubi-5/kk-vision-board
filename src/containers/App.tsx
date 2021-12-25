@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import About from "./About";
 import Home from "./Home";
 import Goals from "./Goals";
-import Test2 from "./Test2";
+import Timeline from "./Timeline";
 import Error from "./Error";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/goals" element={<Goals />} />
-        <Route path="/test2" element={<Test2 />} />
+        <Route path="/timeline" element={<Timeline />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </div>
