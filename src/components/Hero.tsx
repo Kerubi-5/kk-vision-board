@@ -3,7 +3,7 @@ import img1 from "../assets/peach_goma1.png";
 const Hero = () => {
   return (
     <div className="section">
-      <div className="section__header grid">
+      <div className="grid">
         <img src={img1} alt="try" />
       </div>
       <div className="section__title">
