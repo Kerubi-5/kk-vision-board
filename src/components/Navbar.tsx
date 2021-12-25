@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
+import icon from "../assets/favicon-32x32.png";
 
 const Navbar = () => {
   const [isActive, setActive] = useState(false);
@@ -11,7 +12,9 @@ const Navbar = () => {
 
   return (
     <nav className="nav">
-      <div className="nav__brand">KK</div>
+      <div className="nav__brand">
+        <img src={icon} alt="KK" />
+      </div>
       <div
         className={isActive ? "nav__menu active" : "nav__menu"}
         onClick={toggleMenu}
