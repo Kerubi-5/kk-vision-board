@@ -19,14 +19,11 @@ const Navbar = () => {
         <NavLink to="/" className="nav__link">
           Home
         </NavLink>
+        <NavLink to="/goals" className="nav__link">
+          Goals
+        </NavLink>
         <NavLink to="/about" className="nav__link">
           About
-        </NavLink>
-        <NavLink to="/test" className="nav__link">
-          Test
-        </NavLink>
-        <NavLink to="/test2" className="nav__link">
-          Test2
         </NavLink>
       </div>
       <div className="nav__close" onClick={toggleMenu}>
