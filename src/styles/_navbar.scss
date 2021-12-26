@@ -30,7 +30,7 @@
       height: calc(100% - var(--header-height));
       flex-direction: column;
       background-color: #fff;
-      gap: 9rem;
+      gap: 5rem;
       &.active {
         top: var(--header-height);
       }

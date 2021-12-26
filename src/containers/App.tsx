@@ -5,6 +5,7 @@ import Home from "./Home";
 import Goals from "./Goals";
 import Timeline from "./Timeline";
 import Error from "./Error";
+import Museo from "./Museo";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/goals" element={<Goals />} />
         <Route path="/timeline" element={<Timeline />} />
+        <Route path="/museo" element={<Museo />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </div>
