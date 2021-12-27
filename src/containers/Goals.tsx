@@ -8,8 +8,6 @@ const Goals = () => {
         <div className="envelope-wrapper">
           <Envelope />
           <Envelope />
-        </div>
-        <div className="envelope-wrapper">
           <Envelope />
           <Envelope />
         </div>
