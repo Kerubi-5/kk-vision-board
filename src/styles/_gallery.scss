@@ -28,7 +28,7 @@
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   filter: grayscale(100%);
-  transform: scale(1.1);
+
   transition: all 0.5s ease;
 }
 
@@ -40,10 +40,6 @@
   transform: scale(1.5);
   transition: all 0.5s ease;
   position: relative;
-
-  &:after {
-    content: "Nice";
-  }
 }
 @media (min-width: 420px) {
   .-fx-image-gal {
