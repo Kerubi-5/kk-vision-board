@@ -1,6 +1,14 @@
 import TimeDataLeft from "../components/TimeDataLeft";
 import TimeDataRight from "../components/TimeDataRight";
 
+interface IState {
+  data: {
+    flag: string;
+    date: string;
+    desc: string;
+  }[];
+}
+
 const Timeline = () => {
   const timeData = {
     data1: {

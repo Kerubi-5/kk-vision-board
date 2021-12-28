@@ -1,4 +1,4 @@
-interface TimeDataProps {
+interface IProps {
   data: {
     flag: string;
     date: string;
@@ -6,19 +6,19 @@ interface TimeDataProps {
   };
 }
 
-const TimeDataRight = (props: TimeDataProps) => {
+const TimeDataRight: React.FC<IProps> = ({ data }) => {
   return (
     <div>
       <li>
         <div className="direction-r">
           <div className="flag-wrapper">
             <span className="hexa"></span>
-            <span className="flag">{props.data.flag}</span>
+            <span className="flag">{data.flag}</span>
             <span className="time-wrapper">
-              <span className="time">{props.data.date}</span>
+              <span className="time">{data.date}</span>
             </span>
           </div>
-          <div className="desc">{props.data.desc}</div>
+          <div className="desc">{data.desc}</div>
         </div>
       </li>
     </div>
