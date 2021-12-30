@@ -42,10 +42,11 @@
 }
 
 .words {
-  position: absolute;
+  word-wrap: break-word;
+  position: relative;
   left: 10%;
   width: 80%;
-  height: 14%;
+
   background-color: #eeeff0;
 }
 
