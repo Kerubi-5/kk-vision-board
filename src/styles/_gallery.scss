@@ -2,24 +2,15 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: auto;
   width: 100%;
   max-width: 960px;
   justify-content: center;
 }
 .-fx-gal-item {
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow: hidden;
-}
-
-.-fx-gal-item a {
-  padding: 0;
-  margin: 0;
-  width: 100%;
   height: 100%;
-  background-color: white;
+  width: 100%;
+  overflow: hidden;
 }
 
 .-fx-gal-image-thumb img {
@@ -28,7 +19,6 @@
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   filter: grayscale(100%);
-
   transition: all 0.5s ease;
 }
 
