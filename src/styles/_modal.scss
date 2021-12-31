@@ -18,10 +18,8 @@
 
 /* Modal Content (Image) */
 .modal-content {
+  display: grid;
   margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -49,12 +47,5 @@
   }
   to {
     transform: scale(1);
-  }
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-  .modal-content {
-    width: 100%;
   }
 }
