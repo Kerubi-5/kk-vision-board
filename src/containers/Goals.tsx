@@ -11,16 +11,16 @@ interface IState {
 const Goals = () => {
   const myText = [
     {
-      message1: "My goal",
-      message2: "Message 2sdds",
+      message1: "Our first goal,",
+      message2: "To have a stable job so we can be financially capable",
     },
     {
-      message1: "Another goal",
-      message2: "Message ddsasd2",
+      message1: "",
+      message2: "Message",
     },
     {
       message1: "And another goal",
-      message2: "Message 222222",
+      message2: "Message ",
     },
     {
       message1: "Last goal",

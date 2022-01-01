@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import classNames from "classnames";
 
+import pt from "../data/pt";
+import avakin from "../data/avakin";
+
 interface IState {
   imgState: {
     imgSrc: string;
+    msg: string;
     active: boolean;
   };
 }
@@ -11,33 +15,17 @@ interface IState {
 const Museo = () => {
   const [openImg, setOpenImg] = useState<IState["imgState"]>({
     imgSrc: "",
+    msg: "",
     active: false,
   });
-  const data = [
-    {
-      imgSrc: "https://picsum.photos/300/300",
-    },
-    {
-      imgSrc: "https://picsum.photos/300/300",
-    },
-    {
-      imgSrc: "https://picsum.photos/300/300",
-    },
-    {
-      imgSrc: "https://picsum.photos/300/300",
-    },
-    {
-      imgSrc: "https://picsum.photos/300/400",
-    },
-    {
-      imgSrc: "https://picsum.photos/300/400",
-    },
-  ];
 
-  const renderImage = (): JSX.Element[] => {
-    return data.map((data) => {
+  const renderImage = (data: any): JSX.Element[] => {
+    return data.map((data: any) => {
       return (
-        <div className="-fx-gal-item" onClick={() => handleClick(data.imgSrc)}>
+        <div
+          className="-fx-gal-item"
+          onClick={() => handleClick(data.imgSrc, data.msg)}
+        >
           <div className="-fx-gal-image-thumb">
             <img src={data.imgSrc} />
           </div>
@@ -46,23 +34,27 @@ const Museo = () => {
     });
   };
 
-  const handleClick = (img: string) => {
-    setOpenImg({ imgSrc: img, active: !openImg.active });
+  const handleClick = (img: string, msg: string) => {
+    setOpenImg({ imgSrc: img, msg: msg, active: !openImg.active });
   };
   return (
     <>
       <div className="section">
-        <div className="section__title">Zaky</div>
-        <div className="-fx-image-gal">{renderImage()}</div>
+        <div className="section__title">Play together</div>
+
+        <div className="-fx-image-gal">{renderImage(pt)}</div>
+        <div className="section__title">Avakin</div>
+
+        <div className="-fx-image-gal">{renderImage(avakin)}</div>
       </div>
 
       <div
         className={classNames("modal", { active: openImg.active })}
-        onClick={() => handleClick("")}
+        onClick={() => handleClick("", "")}
       >
         <span className="close">&times;</span>
         <img className="modal-content" src={openImg.imgSrc} />
-        <div id="caption">KK</div>
+        <div id="caption">{openImg.msg}</div>
       </div>
     </>
   );
