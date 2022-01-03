@@ -3,6 +3,8 @@ import classNames from "classnames";
 
 import pt from "../data/pt";
 import avakin from "../data/avakin";
+import habbo from "../data/habbo";
+import islet from "../data/islet";
 
 interface IState {
   imgState: {
@@ -40,6 +42,12 @@ const Museo = () => {
   return (
     <>
       <div className="section">
+        <div className="section__title">Islet</div>
+
+        <div className="-fx-image-gal">{renderImage(islet)}</div>
+        <div className="section__title">Habbo</div>
+
+        <div className="-fx-image-gal">{renderImage(habbo)}</div>
         <div className="section__title">Play together</div>
 
         <div className="-fx-image-gal">{renderImage(pt)}</div>
