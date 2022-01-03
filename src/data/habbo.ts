@@ -6,14 +6,6 @@ import habbo_img5 from "../assets/habbo/img5.jpg";
 
 const data = [
   {
-    imgSrc: habbo_img1,
-    msg: "Airen",
-  },
-  {
-    imgSrc: habbo_img2,
-    msg: "By the waterfalls",
-  },
-  {
     imgSrc: habbo_img3,
     msg: "Picnic",
   },
@@ -24,6 +16,14 @@ const data = [
   {
     imgSrc: habbo_img5,
     msg: "Calinao tribe",
+  },
+  {
+    imgSrc: habbo_img1,
+    msg: "Airen",
+  },
+  {
+    imgSrc: habbo_img2,
+    msg: "By the waterfalls",
   },
 ];
 
